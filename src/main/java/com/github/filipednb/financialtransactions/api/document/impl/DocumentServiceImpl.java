@@ -3,7 +3,6 @@ package com.github.filipednb.financialtransactions.api.document.impl;
 import com.github.filipednb.financialtransactions.api.document.DocumentEntity;
 import com.github.filipednb.financialtransactions.api.document.DocumentRepository;
 import com.github.filipednb.financialtransactions.api.document.DocumentService;
-import com.github.filipednb.financialtransactions.api.store.impl.StoreServiceImpl;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
@@ -13,7 +12,7 @@ import org.springframework.transaction.annotation.Transactional;
 @Service
 public class DocumentServiceImpl implements DocumentService {
 
-    private static final Logger log = LoggerFactory.getLogger(StoreServiceImpl.class);
+    private static final Logger log = LoggerFactory.getLogger(DocumentServiceImpl.class);
 
     private DocumentRepository repository;
 
